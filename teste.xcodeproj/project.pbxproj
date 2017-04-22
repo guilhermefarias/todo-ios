@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		55F45C8F1EABE2850085B708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F45C8E1EABE2850085B708 /* AppDelegate.swift */; };
-		55F45C911EABE2850085B708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F45C901EABE2850085B708 /* ViewController.swift */; };
 		55F45C941EABE2850085B708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F45C921EABE2850085B708 /* Main.storyboard */; };
 		55F45C971EABE2850085B708 /* teste.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55F45C951EABE2850085B708 /* teste.xcdatamodeld */; };
 		55F45C991EABE2850085B708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F45C981EABE2850085B708 /* Assets.xcassets */; };
 		55F45C9C1EABE2850085B708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F45C9A1EABE2850085B708 /* LaunchScreen.storyboard */; };
 		55F45CA71EABE2850085B708 /* testeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F45CA61EABE2850085B708 /* testeTests.swift */; };
 		55F45CB21EABE2850085B708 /* testeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F45CB11EABE2850085B708 /* testeUITests.swift */; };
+		55F45CC01EABE4EC0085B708 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F45CBF1EABE4EC0085B708 /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		55F45C8B1EABE2850085B708 /* teste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F45C8E1EABE2850085B708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55F45C901EABE2850085B708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55F45C931EABE2850085B708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F45C961EABE2850085B708 /* teste.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = teste.xcdatamodel; sourceTree = "<group>"; };
 		55F45C981EABE2850085B708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		55F45CAD1EABE2850085B708 /* testeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F45CB11EABE2850085B708 /* testeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeUITests.swift; sourceTree = "<group>"; };
 		55F45CB31EABE2850085B708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F45CBF1EABE4EC0085B708 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				55F45C8E1EABE2850085B708 /* AppDelegate.swift */,
-				55F45C901EABE2850085B708 /* ViewController.swift */,
 				55F45C921EABE2850085B708 /* Main.storyboard */,
 				55F45C981EABE2850085B708 /* Assets.xcassets */,
 				55F45C9A1EABE2850085B708 /* LaunchScreen.storyboard */,
 				55F45C9D1EABE2850085B708 /* Info.plist */,
 				55F45C951EABE2850085B708 /* teste.xcdatamodeld */,
+				55F45CBF1EABE4EC0085B708 /* MainTableViewController.swift */,
 			);
 			path = teste;
 			sourceTree = "<group>";
@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					55F45C8A1EABE2850085B708 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5742WTW25A;
 						ProvisioningStyle = Automatic;
 					};
 					55F45CA11EABE2850085B708 = {
@@ -262,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F45C911EABE2850085B708 /* ViewController.swift in Sources */,
 				55F45C971EABE2850085B708 /* teste.xcdatamodeld in Sources */,
+				55F45CC01EABE4EC0085B708 /* MainTableViewController.swift in Sources */,
 				55F45C8F1EABE2850085B708 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5742WTW25A;
 				INFOPLIST_FILE = teste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DigitalBits.teste;
@@ -428,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5742WTW25A;
 				INFOPLIST_FILE = teste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DigitalBits.teste;
@@ -509,6 +512,7 @@
 				55F45CB81EABE2850085B708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55F45CB91EABE2850085B708 /* Build configuration list for PBXNativeTarget "testeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +521,7 @@
 				55F45CBB1EABE2850085B708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55F45CBC1EABE2850085B708 /* Build configuration list for PBXNativeTarget "testeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				55F45CBE1EABE2850085B708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
